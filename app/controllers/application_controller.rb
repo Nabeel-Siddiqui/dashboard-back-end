@@ -1,7 +1,9 @@
 
 class ApplicationController < ActionController::API
     # before_action :authorized
-  
+    require 'jwt'
+    private
+
     def encode_token(payload)
       # should store secret in env variable
       JWT.encode(payload, 'fortniterockz')
@@ -37,6 +39,5 @@ class ApplicationController < ActionController::API
   
     def authorized
       render json: { message: 'Please log in' }, status: :unauthorized unless logged_in?
-    end
-  
+    end  
   end

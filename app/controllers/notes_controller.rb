@@ -1,6 +1,6 @@
 class NotesController < ApplicationController
     
-    before_action :set_note, only: [:show, :edit, :update, :destroy] :authorized, only: [:create]
+    before_action :set_note, only: [:show, :edit, :update, :destroy]
     
     def index
         @notes = Note.all
@@ -17,7 +17,7 @@ class NotesController < ApplicationController
     end
 
     def create
-        @note = Note.create(name: params[:name], user: @user)
+        @note = Note.create(title: params[:title],text_content: params[:text_content], user_id: params[:user_id])
         render json: @note
     end 
     
