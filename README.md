@@ -21,7 +21,7 @@ Backend
 * PostgreSQL
 
 ## Installation
-[See Backend Here](https://github.com/Nabeel-Siddiqui/dashboard-back-end)
+[See Frontend Here](https://github.com/Nabeel-Siddiqui/dashboard-front-end)
 
 Backend Installation
 * Fork or clone Backend ```git clone https://github.com/Nabeel-Siddiqui/dashboard-back-end```
